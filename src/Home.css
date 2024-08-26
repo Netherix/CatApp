@@ -1,4 +1,4 @@
-.Search {
+.search {
   display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically if the parent has height */
@@ -7,7 +7,7 @@
   margin-bottom: 20px; /* Optional: adds some space below the search bar */
 }
 
-.Favorites {
+.favorites {
   display: flex;
   flex-direction: column; /* Ensures the items are stacked vertically */
   justify-content: center; /* Centers vertically (if needed) */
@@ -17,7 +17,7 @@
   margin-bottom: 20px;
 }
 
-.Sorting {
+.sorting {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,0 +1,11 @@
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust the spacing between buttons as needed */
+    padding: 20px; /* Optional: add padding for spacing */
+  }
+  
+  .pagination-container button {
+    padding: 5px 10px; /* Adjust button padding */
+  }
+  

@@ -6,7 +6,7 @@ const Favorites = ({ favorites, onRemoveFavorite }) => {
   return (
     <div>
       {favorites.length > 0 ? (
-        <div className="favorites">
+        <div className="favorites-container">
           <h3>Favorites</h3>
           {favorites.map((image) => (
             <React.Fragment key={image.id}>

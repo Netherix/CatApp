@@ -1,4 +1,4 @@
-import React from 'react';
+import './Pagination.css'
 
 const Pagination = ({ currentPage, maxPages, onPageChange }) => {
   const handlePreviousPage = () => {
@@ -10,7 +10,7 @@ const Pagination = ({ currentPage, maxPages, onPageChange }) => {
 };
 
   return (
-    <div>
+    <div className='pagination-container'>
       <button onClick={() => onPageChange(handlePreviousPage)} disabled={currentPage === 1}>
         &lt; Previous
       </button>

@@ -93,16 +93,15 @@ const Home = () => {
     <div>
 
       {/* Search Component */}
-      <div className="Search">
+      <div className="search">
         <Search 
           catData={catData} 
-          handleFavorites={handleFavorites}
           handleLearnMore={handleLearnMore}
         />
       </div>
 
       {/* Favorites Component */}
-      <div className="Favorites">
+      <div className="favorites">
         <Favorites
           favorites={favorites}
           onRemoveFavorite={handleRemoveFavorites}
@@ -135,7 +134,7 @@ const Home = () => {
       </div>
 
       {/* Sorting Component */}
-      <div className="Sorting">
+      <div className="sorting">
         <Sorting
           sortAttribute={sortAttribute}
           onSortChange={handleSortChange}

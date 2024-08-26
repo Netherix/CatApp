@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Button from '../Button/Button'
 import './Search.css'
 
-const Search = ({ catData, handleFavorites, handleLearnMore }) => {
+const Search = ({ catData, handleLearnMore }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResult, setSearchResult] = useState(null);
   const [hasSearched, setHasSearched] = useState(false);
