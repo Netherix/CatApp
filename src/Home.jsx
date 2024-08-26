@@ -38,7 +38,7 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    setCurrentPage(1); // Reset to first page when sorting changes
+    setCurrentPage(1);
   }, [sortAttribute]);
 
   const sortedCatData = [...catData].sort((a, b) => {
