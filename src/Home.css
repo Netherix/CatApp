@@ -1,0 +1,55 @@
+.Search {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically if the parent has height */
+  width: 100%; /* Ensures the search component takes up full width */
+  margin-top: 20px;
+  margin-bottom: 20px; /* Optional: adds some space below the search bar */
+}
+
+.Favorites {
+  display: flex;
+  flex-direction: column; /* Ensures the items are stacked vertically */
+  justify-content: center; /* Centers vertically (if needed) */
+  align-items: center; /* Centers everything horizontally */
+  width: 100%; /* Ensures the Favorites container takes up full width */
+  margin-top: 20px; /* Optional: Adds some spacing above the component */
+  margin-bottom: 20px;
+}
+
+.Sorting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.select-a-cat {
+  margin-bottom: 20px;
+}
+
+.select-a-cat h3 {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.main-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.selected-image {
+  max-width: 60%; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
