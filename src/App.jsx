@@ -1,5 +1,5 @@
-import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './App.css'
 import Home from './Home';
 import LearnMore from './Components/LearnMore/LearnMore';
 

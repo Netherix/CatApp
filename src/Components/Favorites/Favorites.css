@@ -6,7 +6,7 @@
 }
 
 .favorites-container img {
-  width: 60%;
+  max-width: 30%;
   height: auto;
 }
 
