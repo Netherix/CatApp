@@ -7,16 +7,6 @@
   margin-bottom: 20px; /* Optional: adds some space below the search bar */
 }
 
-.favorites {
-  display: flex;
-  flex-direction: column; /* Ensures the items are stacked vertically */
-  justify-content: center; /* Centers vertically (if needed) */
-  align-items: center; /* Centers everything horizontally */
-  width: 100%; /* Ensures the Favorites container takes up full width */
-  margin-top: 20px; /* Optional: Adds some spacing above the component */
-  margin-bottom: 20px;
-}
-
 .sorting {
   display: flex;
   justify-content: center;
@@ -52,4 +42,9 @@
   height: auto; /* Maintain aspect ratio */
 }
 
-
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .selected-image {
+    max-width: 50%; /* Increase size on smaller screens */
+  }
+}

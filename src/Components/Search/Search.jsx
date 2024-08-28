@@ -23,7 +23,7 @@ const Search = ({ catData, handleLearnMore }) => {
   return (
     <div>
       <form onSubmit={handleSearch}>
-        <input
+        <input className='text-field'
           type="text"
           value={searchTerm}
           onChange={handleInputChange}

@@ -1,4 +1,4 @@
-import React from 'react';
+import './Sorting.css'
 
 const Sorting = ({ sortAttribute, onSortChange }) => {
   const handleSortChange = (e) => {
@@ -8,7 +8,12 @@ const Sorting = ({ sortAttribute, onSortChange }) => {
   return (
     <div>
       <label htmlFor="sort">Sort by: </label>
-      <select id="sort" onChange={handleSortChange} value={sortAttribute}>
+      <select 
+        id="sort" 
+        onChange={handleSortChange} 
+        value={sortAttribute} 
+        className="sorting-select" // Add class here
+      >
         <option value="default">Default</option>
         <option value="intelligence">Intelligence</option>
         <option value="child_friendly">Child Friendly</option>

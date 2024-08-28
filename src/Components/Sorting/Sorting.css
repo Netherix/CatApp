@@ -1,0 +1,33 @@
+/* Container for the dropdown */
+.sorting-container {
+    display: flex; /* Aligns items horizontally */
+    align-items: center; /* Centers items vertically */
+    gap: 10px; /* Adds space between the label and the dropdown */
+  }
+  
+  /* Style for the label */
+  .sorting-container label {
+    font-size: 1rem; /* Adjust font size */
+    font-weight: 600; /* Make the label text slightly bolder */
+    color: #333; /* Change the color of the label */
+  }
+  
+  /* Style for the dropdown */
+  .sorting-select {
+    padding: 0.5rem 1rem; /* Adds padding inside the dropdown */
+    font-size: 1rem; /* Adjust font size */
+    border: 2px solid #3DD1E7; /* Adds a border */
+    border-radius: 4px; /* Rounds the corners of the dropdown */
+    background-color: #fff; /* Sets background color */
+    color: #333; /* Sets text color */
+    cursor: pointer; /* Changes cursor on hover */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for border color and box-shadow */
+  }
+  
+  /* Style for the dropdown on focus */
+  .sorting-select:focus {
+    border-color: #007bff; /* Changes border color on focus */
+    box-shadow: 0 0 0 2px rgba(38, 143, 255, 0.2); /* Adds a shadow effect */
+    outline: none; /* Removes default outline */
+  }
+  

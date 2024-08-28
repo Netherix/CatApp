@@ -1,11 +1,60 @@
 .pagination-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px; /* Adjust the spacing between buttons as needed */
-    padding: 20px; /* Optional: add padding for spacing */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+  gap: 10px;
+  padding: 20px;
+}
+
+.pagination-container button {
+  background-color: #3DD1E7;
+  margin: 10px 10px; /* Reduce margins to save space */
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .50rem .60rem;
+  width: auto; /* Make the button width more flexible */
+  max-width: 150px; /* Reduce max-width to fit more buttons */
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.pagination-container button:focus {
+  outline: 0;
+}
+
+.pagination-container button:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.pagination-container button:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .pagination-container {
+    gap: 5px; /* Reduce gap between buttons */
   }
-  
+
   .pagination-container button {
-    padding: 5px 10px; /* Adjust button padding */
+    padding: .40rem .50rem;
+    font-size: 0.9rem; /* Smaller font size for smaller screens */
+    max-width: 100px; /* Further reduce button width */
   }
-  
+}
