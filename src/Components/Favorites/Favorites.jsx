@@ -4,25 +4,27 @@ import './Favorites.css';
 
 const Favorites = ({ favorites, onRemoveFavorite }) => {
   return (
-    <div>
+    <div className="favorites-container">
       {favorites.length > 0 ? (
-        <div className="favorites-container">
+        <>
           <h3>Favorites</h3>
           {favorites.map((image) => (
             <React.Fragment key={image.id}>
               <img
                 src={image.url}
                 alt={image.name}
+                className="favorite-image"
               />
               <Button
                 text="Remove Favorites"
                 onClick={() => onRemoveFavorite(image)}
+                className="button"
               />
             </React.Fragment>
           ))}
-        </div>
+        </>
       ) : (
-        <></>
+        <p>No favorites added yet.</p>
       )}
     </div>
   );

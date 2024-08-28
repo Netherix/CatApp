@@ -21,7 +21,7 @@ const Search = ({ catData, handleLearnMore }) => {
   };
 
   return (
-    <div>
+    <div className="search-container">
       <form onSubmit={handleSearch}>
         <input className='text-field'
           type="text"

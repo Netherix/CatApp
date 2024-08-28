@@ -1,3 +1,12 @@
+.search-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically if the parent has height */
+  width: 100%; /* Ensures the search component takes up full width */
+  margin-top: 20px;
+  margin-bottom: 20px; /* Optional: adds some space below the search bar */
+}
+
 form {
   display: flex;
   align-items: center; /* Vertically aligns the button and text field */
