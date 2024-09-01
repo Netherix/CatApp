@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Search from './Components/Search/Search';
 import Pagination from './Components/Pagination/Pagination';
@@ -14,7 +14,8 @@ const Home = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [sortAttribute, setSortAttribute] = useState('default');
 
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
+  const divRef = useRef();
 
   const catsPerPage = 10;
   const maxPages = Math.ceil(catData.length / catsPerPage);
@@ -109,7 +110,7 @@ const Home = () => {
       </div>
 
       {/* Selected Cat Section */}
-      <div className="selected-image-container">
+      <div className="selected-image-container" id="show-content" ref={divRef}>
         {selectedCat ? (
           <>
             <h3>Currently Selected Cat: {selectedCat.name}</h3>

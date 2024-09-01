@@ -5,7 +5,7 @@ import './Favorites.css';
 const Favorites = ({ favorites, onRemoveFavorite }) => {
   return (
     <div className="favorites-container">
-      {favorites.length > 0 ? (
+      {favorites.length > 0 && (
         <>
           <h3>Favorites</h3>
           {favorites.map((image) => (
@@ -23,8 +23,6 @@ const Favorites = ({ favorites, onRemoveFavorite }) => {
             </React.Fragment>
           ))}
         </>
-      ) : (
-        <p>No favorites added yet.</p>
       )}
     </div>
   );
