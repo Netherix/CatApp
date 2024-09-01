@@ -58,6 +58,9 @@ const Home = () => {
       setSelectedCat(null);
     } else {
       setSelectedCat(cat);
+      if (divRef.current) {
+        divRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
@@ -87,7 +90,7 @@ const Home = () => {
   };
 
   const handleLearnMore = (cat) => {
-    navigate('/learn_more', { state: { cat } }); // Navigate and pass cat data in state
+    navigate('/learn_more', { state: { cat } });
   };
 
   return (
@@ -110,7 +113,7 @@ const Home = () => {
       </div>
 
       {/* Selected Cat Section */}
-      <div className="selected-image-container" id="show-content" ref={divRef}>
+      <div className="selected-image-container" ref={divRef}>
         {selectedCat ? (
           <>
             <h3>Currently Selected Cat: {selectedCat.name}</h3>
