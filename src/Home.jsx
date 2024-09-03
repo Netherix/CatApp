@@ -96,6 +96,13 @@ const Home = () => {
   return (
     <div>
 
+      <div className='title'>
+        <h1>Delve Deep Into The Land Of Cute Cats!</h1>
+        <img
+          src='/images/cute_blue_kitty-removebg-preview.png'
+        />
+      </div>
+
       {/* Search Component */}
       <div className="search">
         <Search 
@@ -113,7 +120,7 @@ const Home = () => {
       </div>
 
       {/* Selected Cat Section */}
-      <div className="selected-image-container" ref={divRef}>
+      <div className={`selected-image-container ${selectedCat ? 'has-cat-selected' : ''}`} ref={divRef}>
         {selectedCat ? (
           <>
             <h3>Currently Selected Cat: {selectedCat.name}</h3>

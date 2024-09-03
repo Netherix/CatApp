@@ -1,6 +1,6 @@
 .button {
   background-color: #3DD1E7;
-  margin: 20px 20px;
+  margin: 20px 10px;
   border: 0 solid #E5E7EB;
   box-sizing: border-box;
   color: #000000;
@@ -15,7 +15,7 @@
   text-align: center;
   text-decoration: none #000000 solid;
   text-decoration-thickness: auto;
-  width: 100%;
+  width: 50%;
   max-width: 460px;
   position: relative;
   cursor: pointer;

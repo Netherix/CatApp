@@ -1,3 +1,13 @@
+.title {
+  text-align: center;
+  font-size: 200px;
+}
+
+.title img {
+  width: 50%;
+  height: auto;
+}
+
 .search {
   display: flex;
   justify-content: center; /* Centers horizontally */
@@ -25,6 +35,7 @@
 
 .main-buttons {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -33,12 +44,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 60px;
+  margin: 20px auto; /* Center the container with auto left/right margins */
+  padding: 20px; /* Add some padding to prevent content from touching the border */
+  max-width: 600px; /* Set a maximum width for the container */
+  width: 100%; /* Make sure the container doesn't exceed its content's width */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+/* Only show the border when a cat is selected */
+.selected-image-container.has-cat-selected {
+  border: 5px solid #3DD1E7;
 }
 
 .selected-image {
-  max-width: 30%; /* Responsive width */
+  max-width: 100%; /* Responsive width */
   height: auto; /* Maintain aspect ratio */
 }
 
