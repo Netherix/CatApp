@@ -1,11 +1,22 @@
+h3 {
+  text-align: center;
+}
+
 .title {
   text-align: center;
-  font-size: 200px;
 }
 
 .title img {
-  width: 50%;
-  height: auto;
+  max-width: 10%; /* Ensures the image does not exceed the width of its container */
+  height: auto;    /* Maintains aspect ratio */
+}
+
+@media (max-width: 768px) {
+  .title img {
+    width: 30%; /* Adjust size for smaller screens */
+    max-width: 300px;
+    height: auto; /* Maximum size for smaller screens */
+  }
 }
 
 .search {
@@ -33,11 +44,21 @@
   text-align: center;
 }
 
+.main-buttons-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 2px; /* Minimal space between buttons */
+  max-width: 600px; /* Control overall width */
+  margin: 0 auto; /* Center container */
+}
+
 .main-buttons {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-right: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  width: 100%; /* Full width of grid cell */
 }
 
 .selected-image-container {
@@ -57,7 +78,7 @@
 }
 
 .selected-image {
-  max-width: 100%; /* Responsive width */
+  max-width: 50%; /* Responsive width */
   height: auto; /* Maintain aspect ratio */
 }
 

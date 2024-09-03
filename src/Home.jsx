@@ -153,17 +153,19 @@ const Home = () => {
       </div>
 
       {/* Cat Buttons */}
-      <div className="select-a-cat">
+      <>
         <h3>Select A Cat!</h3>
-        {currentCatArray.map((cat) => (
-          <div className="main-buttons" key={cat.id}>
-            <Button
-              text={cat.name}
-              onClick={() => handleClick(cat)}
-            />
-          </div>    
-      ))}
-      </div>
+        <div className='main-buttons-container'>
+          {currentCatArray.map((cat) => (
+            <div className="main-buttons" key={cat.id}>
+              <Button
+                text={cat.name}
+                onClick={() => handleClick(cat)}
+              />
+            </div>    
+          ))}
+        </div>
+      </>
 
       {/* Pagination Component */}
       <Pagination
