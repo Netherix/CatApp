@@ -1,5 +1,6 @@
 .search-container {
   display: flex;
+  flex-direction: column;
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically if the parent has height */
   width: 100%; /* Ensures the search component takes up full width */
@@ -78,3 +79,4 @@ form {
     font-size: 1.25rem;
   }
 }
+
