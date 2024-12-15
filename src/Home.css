@@ -7,16 +7,9 @@ h3 {
 }
 
 .title img {
-  max-width: 10%; /* Ensures the image does not exceed the width of its container */
-  height: auto;    /* Maintains aspect ratio */
-}
-
-@media (max-width: 768px) {
-  .title img {
-    width: 30%; /* Adjust size for smaller screens */
-    max-width: 300px;
-    height: auto; /* Maximum size for smaller screens */
-  }
+  width: 300px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  object-fit: contain; /* Ensures the image fits nicely in the box */
 }
 
 .search {

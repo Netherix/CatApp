@@ -17,7 +17,7 @@ const Home = () => {
   const navigate = useNavigate();
   const divRef = useRef();
 
-  const catsPerPage = 10;
+  const catsPerPage = 6;
   const maxPages = Math.ceil(catData.length / catsPerPage);
   const lastCatIndex = catsPerPage * currentPage;
   const firstCatIndex = lastCatIndex - catsPerPage;
